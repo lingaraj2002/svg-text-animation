@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    text-align: center;
+}
+svg{
+    background: #101010;
+
+}
+svg text{
+    font-size: 10vw;
+    font-weight: 900;
+    stroke-width:1pt;
+    fill: transparent;
+    stroke: yellow;
+    letter-spacing: 4px;
+    animation: effect 6s infinite alternate;
+}
+@keyframes effect{
+    0%{
+        stroke-dasharray: 0 70%;
+    }
+    100%{
+        stroke-dasharray: 20% 0%;
+        stroke-dashoffset: 20%;
+        text-shadow: 0px 0px 20px #ff0,0px 0px 80px #ff0,0px 0px 100px #ff0;
+    }
+}
